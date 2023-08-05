@@ -88,7 +88,7 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="copyright">
-							<li>&copy; Alexander Zinovev</li>
+							<li>&copy; az-studio.pro<span id="currentYear"></span></li>
 							<li>Visit <a href="https://blog.az-studio.pro">my blog</a></li>
 						</ul>
 					</footer>
@@ -103,6 +103,9 @@
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
 			</script>
+		      <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+      </script>
 
 	</body>
 </html>
